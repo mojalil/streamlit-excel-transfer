@@ -35,8 +35,8 @@ source_file = st.file_uploader("Choose a source file", type=['xlsx'])
 destination_file = st.file_uploader("Choose a destination file", type=['xlsx'])
 
 if source_file and destination_file:
-    source_tab = st.text_input("Enter the source tab name:")
-    destination_tab = st.text_input("Enter the destination tab name:")
+    source_tab = st.text_input("Enter the source tab name:", "MBSB - 3 years")
+    destination_tab = st.text_input("Enter the destination tab name:", "Sheet 1")
 
     if st.button('Transfer Data'):
         with NamedTemporaryFile(delete=False, suffix='.xlsx') as tmp_source, \
