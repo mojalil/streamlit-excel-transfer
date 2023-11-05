@@ -43,6 +43,13 @@ To run the Streamlit application:
 streamlit run main.py
 ```
 
+Or run by double clicking the command script `start_app.command` make `first sure to update the command script` to be executable by
+
+```
+chmod +x start_app.command
+```
+
+
 The application will start and automatically open in your web browser.
 
 ## Contributing
